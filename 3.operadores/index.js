@@ -16,5 +16,24 @@
  let reiduo=10%3
  // tarea operadores de comparacion:
  // operadores logicos
+ let edad = 20;
+let tieneDNI = true;
+
+console.log("\n== Operadores Lógicos ==");
+console.log("¿Es mayor de edad y tiene DNI?:", edad >= 18 && tieneDNI); 
+console.log("¿Es menor de edad o tiene DNI?:", edad < 18 || tieneDNI);  
+console.log("¿No tiene DNI?:", !tieneDNI);  
+
  //operadores terniarios
- console.log(divicion)
+ console.log("\n== Operador Ternario ==");
+let mensaje = (edad >= 18) ? "Puede votar" : "No puede votar";
+console.log(mensaje); 
+ 
+//1. el primer valor debe ser un valor boleano
+//2. el segundo valor es el resultado si el primer valor es verdadero
+//3. el tercer valor es el resultado si el primer valor es falso
+
+let ternario = true ? "verdadero" : "falso";
+console.log(ternario);
+
+

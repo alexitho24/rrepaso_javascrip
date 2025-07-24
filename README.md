@@ -45,12 +45,28 @@ tenemos dos pasos para crear una variable/constante
 `let`,`var` ambos nos permiten crear variables su unica diferencia es el alcanse ambito o `scope`
 (averiguar)
 ## 3. operadores
-## 4. funciones 
-## 5. metodos para trabajar con datos estructurados 
+su clasificacion general se divide en 3 
+1. operadores promarios 
+ son aquellos que estan ubicados a la izquierda del valor y que retornan en nuevo valor.
+2. operadores binarios
+   son aquellos que estan en medio de dos valores y que retornan un unico valor 
+   - operadores de comparacion
+   - operadores aritmeticos
+   - operadores logicos
+3. operadores terciarios
+   son aquellos que evaluan tres valores y que retornan un solo valor 
+   - operador condicional
+## 4. controles de flujo
+### 1. control de decicione (if-else)
+### 2. bucles (for)
+### 3. bucles (while)
+## 5. funciones 
+## 6. metodos para trabajar con datos estructurados 
 ### acceder
 ### modifica
 ### crear
 ### insertar
 ### eliminar
 ### ordenar
+## 7. DOM
 
