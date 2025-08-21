@@ -45,3 +45,25 @@ if (number === 1) {
 }
 
 
+// crear un programa que me muestre el numero en texto con switch
+switch (number) {
+    case 1:
+        console.log("uno");
+        break;
+    case 2:
+        console.log("dos");
+        break;
+    case 3:
+        console.log("tres");
+        break;
+    case 4:
+        console.log("cuatro");
+        break;
+    case 5:
+        console.log("cinco");
+        break;
+    default:
+        console.log("numero no encontrado");
+}
+
+
