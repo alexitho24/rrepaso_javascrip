@@ -64,8 +64,25 @@ javascrip nos permite crear caminos alternativos en nuestros programas dependien
 si tenemos una condicion verdadera se ejecutara una sentencia totalmente distinta.
 **observacion** la ejecucion condicional rompe el flujo normal de un programa 
 ### 2. bucles (for)
+- tarea con susu ejemplos 
+  
 ### 3. bucles (while)
+- tarea con sus ejemplos
+  
+  while (condición) {
+  // código a ejecutar mientras la condición sea verdadera
+}
 ## 5. funciones 
+las funciones en javascripson bloques de codigo que se ejecuta de manera independiente, podemos decir tambien que son mini programs que toman datos como entrada y retornan otros datos como salida. 
+las funciones son fundamentales para el correcto ordenamiento de nuestro codigo ademas que nos permiten separa de una manera mas ordenada nuestra logica y evitar repetir el codigo muchas veces.
+existen 3 tipos de funciones 
+### tipos de funciones 
+#### 1. funciones por declaracion
+este tipo de funciones es la mas conocida y la mas usada y su estructura es la siguiente:
+![alt text](image.png)
+#### 2.funciones por expresión 
+#### 3.funciones flecha (arrow puction)
+
 ## 6. metodos para trabajar con datos estructurados 
 ### acceder
 ### modifica

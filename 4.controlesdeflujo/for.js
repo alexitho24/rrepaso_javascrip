@@ -34,3 +34,17 @@ for (let i = 0; i < frutas.length; i++) {
         console.log(frutas[i])
     }
 }
+
+let fruta_Buscada = "pera";
+let fruta_Encontrada = false;
+for (let i = 0; i < frutas.length; i++) {
+    if (frutas[i] === fruta_Buscada) {
+        fruta_Encontrada = true;
+        break;
+    }
+}
+if (fruta_Encontrada) {
+    console.log("La fruta existe:", fruta_Buscada);
+} else {
+    console.log("La fruta no existe:", fruta_Buscada);
+    }
