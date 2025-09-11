@@ -80,15 +80,97 @@ existen 3 tipos de funciones
 #### 1. funciones por declaracion
 este tipo de funciones es la mas conocida y la mas usada y su estructura es la siguiente:
 ![alt text](image.png)
-#### 2.funciones por expresión 
-#### 3.funciones flecha (arrow puction)
+#### 2 funciones por exprecion 
+Función para calcular el cuadrado de un número
+`js
+const cuadrado = function(num) {
+  return num * num;
+};
+`
+
+ Función para calcular el cubo de un número
+ `js
+const cubo = function(num) {
+  return num * num * num;
+};
+`
+ Uso de las funciones
+ `js
+let numero = 3;
+console.log("El cuadrado de", numero, "es:", cuadrado(numero)); // 9
+console.log("El cubo de", numero, "es:", cubo(numero));       // 27
+`
+#### 3 funcion flecha (arrow punction)
+1. Función flecha para sumar dos números
+`js
+const sumar = (a, b) => a + b;
+`
+ 2. Función flecha para verificar si un número es par
+ `js
+const esPar = num => num % 2 === 0;
+`
+3. Función flecha para convertir una cadena a mayúsculas
+ `js
+const convertirMayusculas = texto => texto.toUpperCase();
+`
+Uso de las funciones
+`js
+console.log(sumar(5, 7));                  // 12
+console.log(esPar(10));                     // true
+console.log(convertirMayusculas("hola"));  // HOLA
 
 ## 6. metodos para trabajar con datos estructurados 
-### acceder
-### modifica
-### crear
-### insertar
-### eliminar
-### ordenar
+los metodos son funciones que dan funcionalidades extras a los tipos de datros en los cuales se aplican. es un metodo es antesecido por un tipo de dato y un punto.
+**ejemplo**
+el ejemplo mas claro de un metodo es el ´length´ - estrte metodo nos permite o nos retorno la cantidad de caracteres de un string o la cantidad de elementos de una lista.
+```js
+"hola".length // 4 
+[2,5,4,6,7]. length // 5  
+```
+> [!TIP] los metodos en su mayoria solo se aplican a tipo de datos estring, listas y objetos, en su gran parte son aplicados para la lista.
+### 6.1 metodos para estring - cadenas de texto 
+#### length
+devuelve la longitud de una cadena 
+```js
+let mensaje="hola como estas"
+console.long(mensaje.lenhth)
+//retorna -> 15
+```
+#### toLowerCase
+devuelve una cadena en minusculas
+```js
+let mensaje="HOLA"
+console.long(texto.toLowerCase())
+//retorna -> hola
+```
+#### toUpperCase
+devuelve una cadena en mayusculas
+```js
+let mensaje="hola"
+console.long(texto.toUpperCase())
+//retorna -> HOLA
+```
+#### concat
+combina el texto de dos o mas cadenas 
+```js
+let nombre="kcapa"
+let saludo="hola"
+//let concatenado=nombre+saludo
+console.long(saludo.concat(nombre))
+
+let cad1="oh"
+let cad2="me"
+let cad3="vengo"
+console.long(cad1.concat(cad2,cad3))
+// retorna -> ho me vengo
+```
+### 6.2 metodos para listas - arrays 
+  ### 1.acceder
+  ### 2.modifica
+  ### 3.crear
+  ### 4.insertar
+  ### 5.eliminar
+  ### 6.ordenar
+### 6.3 metodos para objetos 
 ## 7. DOM
 
