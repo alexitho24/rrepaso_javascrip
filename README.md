@@ -254,13 +254,42 @@ este metodo ejecuta una funcion anonima por cada elemento de un array generando 
 let numeros=[1,2,3,4,5,6]
 numeros.map(n=>{return n+1})
 ```
+#### metodos para buscar elemtos en una lista 
+#### includes 
+este metoddo busca un valor en especifico y devuelve un valor booleano en cas de encontrar el valor buscando retorna true caso contrario false 
+```js
+let vocales=[`a`,`i`,`o`,`u`]
+let buscaE=vocales.includes(`e`)
+//retorna false
+let buscaA=vocales.includes(`a`)
+// retorna true 
+```
+#### filter
+este metodo se usa para encontrar elementos dentro de una lista que cumplan con cierta condicion 
+```js
+let numeros=[2,4,6,8,1,2,6]
+// deseo una lista con los numero que sena menor a 4
 
-  ### 1.acceder
-  ### 2.modifica
-  ### 3.crear
-  ### 4.insertar
-  ### 5.eliminar
-  ### 6.ordenar
+```
+#### find
+este metodo se usa para encontrar el primerelemento que cumpla con cierta condicion, a diferencia del `filter` solo retorna un elemto el que coincida con la condicion 
+```js
+let lisNumeros =[10,11,3,20,5]
+led menorDiez=lisNumero.find(n=>{return n>10})
+console.log(menorDiez)
+```
 ### 6.3 metodos para objetos 
+#### creando un objeto
+```js
+//objeto o diccionario vacio
+led objeto={}
+```
+#### agregandos elementos a un objeto
+recuerden que un objeto de un elemento conformado por `clave:valor`
+```js
+objeto["nombre"]="ruth"
+objeto["edad"]="18"
+objeto["cui"]="086745323"
+```
 ## 7. DOM
 
