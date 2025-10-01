@@ -4,67 +4,78 @@
 //agregar un nuevo vehiculo
 //eliminar un vehiculo
 //poder filtar los vehiculos por año de fabricacion
-//buscar un vehiculo por su numero de placa
+//buscar un vehiculo por su numero de placa 
 
 let vehiculos=[
-    {marca:"Toyota", modelo:"Corolla", anio:2020, precio:20000, placa:"ABC123"},
-    {marca:"Honda", modelo:"Civic", anio:2019, precio:22000, placa:"DEF456"},   
-    {marca:"Ford", modelo:"Focus", anio:2018, precio:18000, placa:"GHI789"},
-    {marca:"Chevrolet", modelo:"Malibu", anio:2021, precio:25000, placa:"JKL012"},
-    {marca:"Nissan", modelo:"Sentra", anio:2017, precio:17000, placa:"MNO345"}
+    {marca:"toyota", modelo:"corolla", año:2020, precio:20000, placa:"ABC123"},
+    {marca:"honda", modelo:"civic", año:2019, precio:22000, placa:"DEF456"},
+    {marca:"ford", modelo:"focus", año:2018, precio:18000, placa:"GHI789"},
+    {marca:"chevrolet", modelo:"malibu", año:2021, precio:25000, placa:"JKL012"},
+    {marca:"nissan", modelo:"altima", año:2022, precio:27000, placa:"MNO345"}
 ]
-//funcion para actualizar el precio de un vehiculo
 function actualizarPrecio(placa, nuevoPrecio) {
     let vehiculo = vehiculos.find(v => v.placa === placa);  
-
     if (vehiculo) {
         vehiculo.precio = nuevoPrecio;
-        console.log(`El precio del vehiculo con placa ${placa} ha sido actualizado a ${nuevoPrecio}`);
+        console.log(`Precio del vehiculo con placa ${placa} actualizado a ${nuevoPrecio}`);
     } else {
-        console.log(`Vehiculo con placa ${placa} no encontrado.`);
-    }                                                                                                    
-}
-actualizarPrecio("DEF456", 23000)       
+        console.log(`Vehiculo con placa ${placa} no encontrado`);
+    }           
+}   
+actualizarPrecio("DEF456", 23000);
 
-
-//funcion para agregar un nuevo vehiculo
 function agregarVehiculo(nuevoVehiculo) {
     vehiculos.push(nuevoVehiculo);
-    console.log("Nuevo vehiculo agregado:", nuevoVehiculo);
-}
-agregarVehiculo({marca:"Mazda", modelo:"3", anio:2022, precio:27000, placa:"PQR678"})
-console.log(vehiculos)
 
-//funcion para eliminar un vehiculo
-function eliminarVehiculo(placa) {
+
+    console.log("Nuevo vehiculo agregado:", nuevoVehiculo);
+}   
+agregarVehiculo({marca:"mazda", modelo:"3", año:2023, precio:28000, placa:"PQR678"});
+
+function eliminarVehiculo(placa) {  
     let indice = vehiculos.findIndex(v => v.placa === placa);
     if (indice !== -1) {
         let vehiculoEliminado = vehiculos.splice(indice, 1);
         console.log("Vehiculo eliminado:", vehiculoEliminado[0]);
     } else {
-        console.log(`Vehiculo con placa ${placa} no encontrado.`);
+        console.log(`Vehiculo con placa ${placa} no encontrado`);
     }
 }
-eliminarVehiculo("GHI789")
-console.log(vehiculos)
+eliminarVehiculo("GHI789");
 
-//funcion para filtrar vehiculos por año de fabricacion
-function filtrarPorAnio(anio) {
-    let vehiculosFiltrados = vehiculos.filter(v => v.anio === anio);
-    console.log(`Vehiculos fabricados en el año ${anio}:`, vehiculosFiltrados);
+function filtrarPorAño(año) {   
+    let vehiculosFiltrados = vehiculos.filter(v => v.año === año);
+    return vehiculosFiltrados;
 }
-filtrarPorAnio(2020)
-//funcion para buscar un vehiculo por su numero de placa
+console.log("Vehiculos del año 2020:", filtrarPorAño(2020));
+
 function buscarPorPlaca(placa) {
     let vehiculo = vehiculos.find(v => v.placa === placa);
-    if (vehiculo) {
-        console.log("Vehiculo encontrado:", vehiculo);
-    } else {
-        console.log(`Vehiculo con placa ${placa} no encontrado.`);
-    }      
+    return vehiculo ? vehiculo : `Vehiculo con placa ${placa} no encontrado`;
 }
-buscarPorPlaca("JKL012")    
-buscarPorPlaca("XYZ999")
+console.log("Busqueda por placa DEF456:", buscarPorPlaca("DEF456"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
