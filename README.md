@@ -194,6 +194,67 @@ listafrutas.split(",")
 ```
 
 ### 6.2 metodos para listas - arrays 
+#### crear una lista 
+```js
+let lista=[]
+```
+#### Agregando elementos a una lista 
+```js
+lista[0]="manzana"
+```
+#### Agregando elementos al final de una lista 
+```js
+let lista=[]
+lista.push("manzana")
+```
+#### Agregando elementos al inicio de una lista 
+el metodo `unshift` agrega elemtos al inicio de una lista 
+```js
+let amigos=[`rony`,`lisbet`,`josema`]
+amigos.unshift(ashly)
+
+```
+#### removiendo elemtos de una lista 
+el metodo `pop` al contrario de push extrae el ultimo elemto de una lista.
+#### shift
+el metodo `shift` al contrario de unshift extrae el primer elemento de una lista.
+#### Eliminando elemtos de una lizta 
+#### delete
+elimina un elemto de la base de su indice
+```js
+let texto=["hola","como"," ", "estas"]
+delete texto[2]
+```
+#### splice 
+este metodo elimina el elemento en base a su indice y a la cantidad de elemtos a eliminar.
+```js
+let vocales=[`a`,`e`,`e`,`i`,`o`,`u`]
+vocales.splice(2,1)
+```
+#### combinando o uniendo listas (array)
+#### concat
+este metodo crea un nuevo array que contiene los elememtos de array original seguido por los elemtos de uno o mas array proporcionados.
+```js
+let friends=[]
+let amigosprimaria=["choco","manuel","parra"]
+let amigossecundaria=["jhon","jose","henrry"]
+let amigossuperior=["ashly","lizbeth","ronny"]
+let friends.amigosprimaria.concat(amigossecundaria,amigossuperior) 
+```
+#### metodos para iterar una lista 
+#### forEach
+este metodo ejecutrta una funcion anonima por cada elemento de una array 
+```js
+let numeros=[1,2,3,4,5,6]
+numeros.forEach(n=>{console.log(n+1)})
+```
+#### map
+este metodo ejecuta una funcion anonima por cada elemento de un array generando una nueva lista 
+```js
+let numeros=[1,2,3,4,5,6]
+numeros.map(n=>{return n+1})
+```
+
   ### 1.acceder
   ### 2.modifica
   ### 3.crear
