@@ -77,6 +77,8 @@ console.log("Busqueda por placa DEF456:", buscarPorPlaca("DEF456"));
 
 
 
+
+
     
 
 

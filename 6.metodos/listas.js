@@ -50,7 +50,7 @@ let numeros=[1,2,3,4,5,6]
 numeros.forEach(n=>{console.log(n+1)})
 
 
-let numeros=[1,2,3,4,5,6]
+let numeros2=[1,2,3,4,5,6]
 let newnumeros=numeros.map(n=>{return n+1})
 console.log(newnumeros) 
 

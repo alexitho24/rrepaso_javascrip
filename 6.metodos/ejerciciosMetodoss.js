@@ -20,6 +20,9 @@ let alumnos=[
     {"nombre":"flor","edad":18, "cui":2344342343},
     {"nombre":"ashly","edad":19, "cui":234348933}
 ]
+let buscacui=alumnos.find(al=>al.cui==2344342343)
+console.log(buscacui)
+
 let listamenores=alumnos.filter(al=>al.edad<19)
 console.log(listamenores)
 

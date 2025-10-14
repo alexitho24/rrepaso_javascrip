@@ -26,4 +26,5 @@ function amigosEnMayuscula(amigos) {
     }
     return amigosMayuscula;
 }
-console.log(amigosEnMayuscula(["ashly", "lizbet", "alder", "Ana"]));  
+console.log(amigosEnMayuscula(["ashly", "lizbet", "alder", "Ana"])); 
+
